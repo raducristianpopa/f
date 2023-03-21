@@ -1,0 +1,9 @@
+{
+  "references": [
+    {
+      "path": "apps/web"
+    }
+  ],
+  "files": [],
+  "include": []
+}
