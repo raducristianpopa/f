@@ -1,10 +1,20 @@
 {
   "name": "@bites/tailwind",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "index.cjs",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "module": "./index.cjs"
+    },
+    "./postcss": {
+      "require": "./postcss.cjs",
+      "module": "./postcss.cjs"
+    }
+  },
   "files": [
-    "index.js",
-    "postcss.js"
+    "index.cjs",
+    "postcss.cjs"
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.14",

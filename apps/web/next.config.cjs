@@ -2,7 +2,7 @@
  * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation.
  * This is especially useful for Docker builds and Linting.
  */
-!process.env.SKIP_ENV_VALIDATION && require("./src/env.js");
+!process.env.SKIP_ENV_VALIDATION && require("./src/env");
 
 /** @type {import("next").NextConfig} */
 module.exports = {

@@ -1,3 +1,3 @@
 export default function Index() {
-  return <>Index</>;
+  return <div className="text-red-500">Index</div>;
 }
