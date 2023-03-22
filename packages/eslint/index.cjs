@@ -8,6 +8,8 @@ const config = {
     "plugin:prettier/recommended",
   ],
   rules: {
+    "no-var": "error",
+    "no-eval": "error",
     "@next/next/no-html-link-for-pages": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -21,6 +23,17 @@ const config = {
     "@typescript-eslint/consistent-type-imports": [
       "error",
       { prefer: "type-imports", fixStyle: "inline-type-imports" },
+    ],
+    "@typescript-eslint/consistent-type-assertions": "warn",
+    "@typescript-eslint/no-redeclare": "error",
+    "@typescript-eslint/no-use-before-define": [
+      "warn",
+      {
+        functions: false,
+        classes: false,
+        variables: false,
+        typedefs: false,
+      },
     ],
   },
   ignorePatterns: [
