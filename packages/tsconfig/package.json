@@ -2,8 +2,7 @@
   "name": "@bites/tsconfig",
   "version": "0.0.0",
   "files": [
-    "src/base.json",
-    "src/nextjs.json"
+    "./*"
   ],
   "private": true
 }
