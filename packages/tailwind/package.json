@@ -1,21 +1,17 @@
 {
   "name": "@bites/tailwind",
   "version": "0.0.0",
-  "main": "index.cjs",
+  "main": "src/index.cjs",
   "exports": {
     ".": {
-      "require": "./index.cjs",
-      "module": "./index.cjs"
+      "require": "./src/index.cjs",
+      "module": "./src/index.cjs"
     },
     "./postcss": {
-      "require": "./postcss.cjs",
-      "module": "./postcss.cjs"
+      "require": "./src/postcss.cjs",
+      "module": "./src/postcss.cjs"
     }
   },
-  "files": [
-    "index.cjs",
-    "postcss.cjs"
-  ],
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
