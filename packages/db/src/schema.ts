@@ -1,44 +1,68 @@
 import type { Kyselify } from "drizzle-orm/kysely";
 import {
   char,
+  index,
   int,
   mysqlEnum,
   mysqlTable,
   real,
   text,
   timestamp,
+  uniqueIndex,
   varchar,
   type InferModel,
 } from "drizzle-orm/mysql-core";
 
-export const users = mysqlTable("users", {
-  id: char("id", { length: 16 }).primaryKey(),
-  clerkId: varchar("clerkId", { length: 64 }).notNull(),
-  username: varchar("username", { length: 60 }).notNull(),
-  email: varchar("email", { length: 255 }).notNull(),
-  password: varchar("password", { length: 255 }).notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
-});
+export const users = mysqlTable(
+  "users",
+  {
+    id: char("id", { length: 16 }).primaryKey(),
+    clerk_id: varchar("clerk_id", { length: 64 }).notNull(),
+    username: varchar("username", { length: 60 }).notNull(),
+    email: varchar("email", { length: 255 }).notNull(),
+    password: varchar("password", { length: 255 }).notNull(),
+    created_at: timestamp("created_at").defaultNow().notNull(),
+    updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
+  },
+  (table) => ({
+    usernameIndex: index("users__username__index").on(table.username),
+    usernameUniqueIndex: uniqueIndex("users__username__unique_index").on(
+      table.username,
+    ),
+    email_index: uniqueIndex("users__email__index").on(table.email),
+    created_at_index: index("users__created_at__index").on(table.created_at),
+  }),
+);
 
-export const recipes = mysqlTable("recipes", {
-  id: char("id", { length: 16 }).primaryKey(),
-  user_id: char("user_id", { length: 16 }).notNull(),
-  title: varchar("title", { length: 255 }).notNull(),
-  description: text("description").notNull(),
-  preparation_time: int("preparation_time").notNull(),
-  cooking_time: int("cooking_time").notNull(),
-  servings: int("servings").notNull(),
-  difficulty: mysqlEnum("difficulty", ["EASY", "MEDIUM", "HARD"]).notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
-});
+export const recipes = mysqlTable(
+  "recipes",
+  {
+    id: char("id", { length: 16 }).primaryKey(),
+    slug: varchar("slug", { length: 255 }).notNull(),
+    user_id: char("user_id", { length: 16 }).notNull(),
+    title: varchar("title", { length: 255 }).notNull(),
+    description: text("description").notNull(),
+    preparation_time: int("preparation_time").notNull(),
+    cooking_time: int("cooking_time").notNull(),
+    servings: int("servings").notNull(),
+    difficulty: mysqlEnum("difficulty", ["EASY", "MEDIUM", "HARD"]).notNull(),
+    created_at: timestamp("created_at").defaultNow().notNull(),
+    updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
+  },
+  (table) => ({
+    slug_index: index("recipes__slug__index").on(table.slug),
+    slug_unique_index: uniqueIndex("recipes__slug__unique_index").on(
+      table.slug,
+    ),
+    created_at_index: index("created_at__index").on(table.created_at),
+  }),
+);
 
 export const allergens = mysqlTable("allergens", {
   id: char("id", { length: 16 }).primaryKey(),
   name: varchar("name", { length: 255 }).notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
+  created_at: timestamp("created_at").defaultNow().notNull(),
+  updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
 });
 
 export const recipe_allergens = mysqlTable("recipe_allergens", {
@@ -52,8 +76,8 @@ export const ingredients = mysqlTable("ingredients", {
   unit_id: char("unit_id", { length: 16 }).notNull(),
   name: varchar("name", { length: 255 }).notNull(),
   quantity: real("quantity").notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
+  created_at: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
 });
 
 export const instructions = mysqlTable("instructions", {
@@ -61,8 +85,8 @@ export const instructions = mysqlTable("instructions", {
   recipe_id: char("recipe_id", { length: 16 }).notNull(),
   step: int("step").notNull(),
   description: text("description").notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
+  created_at: timestamp("created_at").defaultNow().notNull(),
+  updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
 });
 
 export const recipe_nutrition = mysqlTable("recipe_nutrition", {
@@ -74,16 +98,16 @@ export const recipe_nutrition = mysqlTable("recipe_nutrition", {
   carbohydrates: real("carbohydrates").notNull(),
   fiber: real("fiber").notNull(),
   sugar: real("sugar").notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
+  created_at: timestamp("created_at").defaultNow().notNull(),
+  updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
 });
 
 export const units = mysqlTable("units", {
   id: char("id", { length: 16 }).primaryKey(),
   name: varchar("name", { length: 255 }).notNull(),
   abbreviation: varchar("abbreviation", { length: 10 }).notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().notNull().onUpdateNow(),
+  created_at: timestamp("created_at").defaultNow().notNull(),
+  updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
 });
 
 export type UserModel = typeof users;

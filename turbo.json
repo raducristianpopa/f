@@ -6,6 +6,11 @@
       "persistent": true,
       "cache": false
     },
+    "db:migrate": {
+      "inputs": ["src/schema.ts"],
+      "outputs": ["migrations/**"],
+      "cache": false
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**"]
