@@ -2,6 +2,9 @@
   "references": [
     {
       "path": "apps/web"
+    },
+    {
+      "path": "packages/db"
     }
   ],
   "files": [],

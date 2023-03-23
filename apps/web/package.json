@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@bites/db": "0.0.0",
     "@bites/tsconfig": "0.0.0",
     "@tanstack/react-query": "^4.28.0",
     "@trpc/client": "^10.17.0",

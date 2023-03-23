@@ -1,0 +1,12 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1679525412937,
+      "tag": "0000_rapid_jasper_sitwell"
+    }
+  ]
+}

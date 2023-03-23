@@ -49,3 +49,6 @@ yarn-error.log*
 
 # Local notes
 .notes
+
+# Drizzle Kit DB Push config
+drizzle.config.json

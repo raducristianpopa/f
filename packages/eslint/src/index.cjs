@@ -37,7 +37,6 @@ const config = {
     ],
   },
   ignorePatterns: [
-    "env.cjs",
     ".eslintrc.cjs",
     ".prettierrc.cjs",
     "**/*.config.cjs",

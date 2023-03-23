@@ -21,14 +21,10 @@
   },
   "globalEnv": [
     "CI",
-    "DATABASE_URL",
-    "DISCORD_CLIENT_ID",
-    "DISCORD_CLIENT_SECRET",
-    "EXPO_ROUTER_APP_ROOT",
-    "NEXTAUTH_SECRET",
-    "NEXTAUTH_URL",
+    "DATABASE_HOST",
+    "DATABASE_PASSWORD",
+    "DATABASE_USERNAME",
     "NODE_ENV",
-    "SKIP_ENV_VALIDATION",
     "VERCEL",
     "VERCEL_URL"
   ]
