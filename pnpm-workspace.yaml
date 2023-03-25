@@ -1,6 +1,6 @@
 packages:
   - apps/web
   - packages/db
-  - packages/tailwind
   - packages/eslint
+  - packages/tailwind
   - packages/tsconfig

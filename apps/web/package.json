@@ -14,16 +14,21 @@
   "dependencies": {
     "@bites/db": "0.0.0",
     "@bites/tsconfig": "0.0.0",
+    "@clerk/nextjs": "^4.11.13",
     "@tanstack/react-query": "^4.28.0",
     "@trpc/client": "^10.17.0",
     "@trpc/next": "^10.17.0",
     "@trpc/react-query": "^10.17.0",
     "@trpc/server": "^10.17.0",
+    "micro": "^10.0.1",
+    "mysql2": "^2.3.3",
+    "nanoid": "^4.0.1",
     "next": "^13.2.4",
     "next-auth": "^4.20.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.9.1",
+    "svix": "^0.82.1",
     "zod": "^3.21.4"
   },
   "devDependencies": {

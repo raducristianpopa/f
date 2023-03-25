@@ -5,6 +5,7 @@ const server = z.object({
   DATABASE_HOST: z.string().min(1),
   DATABASE_PASSWORD: z.string().min(1),
   DATABASE_USERNAME: z.string().min(1),
+  CLERK_WEBHOOK_SECRET: z.string().min(1),
 });
 
 const client = z.object({});
@@ -17,10 +18,8 @@ const processEnv = {
   DATABASE_HOST: process.env.DATABASE_HOST,
   DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
   DATABASE_USERNAME: process.env.DATABASE_USERNAME,
+  CLERK_WEBHOOK_SECRET: process.env.CLERK_WEBHOOK_SECRET,
 };
-
-// Don't touch the part below
-// --------------------------
 
 const merged = server.merge(client);
 
