@@ -13,6 +13,12 @@
       "version": "5",
       "when": 1679601754727,
       "tag": "0001_married_hedge_knight"
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1679683725267,
+      "tag": "0002_common_may_parker"
     }
   ]
 }

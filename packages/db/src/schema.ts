@@ -20,7 +20,6 @@ export const users = mysqlTable(
     clerk_id: varchar("clerk_id", { length: 64 }).notNull(),
     username: varchar("username", { length: 60 }).notNull(),
     email: varchar("email", { length: 255 }).notNull(),
-    password: varchar("password", { length: 255 }).notNull(),
     created_at: timestamp("created_at").defaultNow().notNull(),
     updated_at: timestamp("updated_at").defaultNow().notNull().onUpdateNow(),
   },
