@@ -33,7 +33,7 @@ importers:
       '@bites/trpc': 0.0.0
       '@bites/tsconfig': 0.0.0
       '@clerk/nextjs': ^4.11.13
-      '@types/node': ^18.15.5
+      '@types/node': ^18.15.10
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
       autoprefixer: ^10.4.14
@@ -68,7 +68,7 @@ importers:
       zod: 3.21.4
     devDependencies:
       '@bites/tailwind': link:../../packages/tailwind
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       autoprefixer: 10.4.14_postcss@8.4.21
@@ -83,7 +83,7 @@ importers:
     specifiers:
       '@bites/tsconfig': 0.0.0
       '@planetscale/database': ^1.6.0
-      '@types/node': ^18.15.5
+      '@types/node': ^18.15.10
       drizzle-kit: 0.17.0-0cf3fe9
       drizzle-orm: 0.22.0-cfe1679
       kysely: ^0.23.5
@@ -99,7 +99,7 @@ importers:
       mysql2: 2.3.3
     devDependencies:
       '@bites/tsconfig': link:../tsconfig
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
       typescript: 5.0.2
 
   packages/eslint:
@@ -121,7 +121,7 @@ importers:
       eslint-config-next: 13.2.4_j4766f7ecgqbon3u7zlxn5zszu
       eslint-config-prettier: 8.8.0_eslint@8.36.0
       eslint-config-turbo: 0.0.9_eslint@8.36.0
-      eslint-plugin-prettier: 4.2.1_ose2zoovovx4ulolhifz3tfzx4
+      eslint-plugin-prettier: 4.2.1_4zq63nz6e4ttpwysb2ij6p5kku
       eslint-plugin-react: 7.32.2_eslint@8.36.0
     devDependencies:
       eslint: 8.36.0
@@ -147,10 +147,10 @@ importers:
       superjson: 1.9.1
       zod: ^3.21.4
     dependencies:
-      '@tanstack/react-query': 4.28.0_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': 4.28.0
       '@trpc/client': 10.18.0_@trpc+server@10.18.0
-      '@trpc/next': 10.18.0_fk7ybuwqrs7skzzxcj6wjc5c3i
-      '@trpc/react-query': 10.18.0_rcvfzig2xktluz4p7kugxqlbwi
+      '@trpc/next': 10.18.0_45rbrscmrrjg7feeekvlamjx4e
+      '@trpc/react-query': 10.18.0_ixbuxeta5y4viog34zdlpiamk4
       '@trpc/server': 10.18.0
       superjson: 1.9.1
       zod: 3.21.4
@@ -1061,7 +1061,7 @@ packages:
     resolution: {integrity: sha512-sm+QncWaPmM73IPwFlmWSKPqjdTXZeFf/7aEmWh00z7yl2FjqophPt0dE1EHW9P1giMC5rMviv7OUbSDmWzXXA==}
     dev: false
 
-  /@tanstack/react-query/4.28.0_biqbaboplfbrettd7655fr4n2y:
+  /@tanstack/react-query/4.28.0:
     resolution: {integrity: sha512-8cGBV5300RHlvYdS4ea+G1JcZIt5CIuprXYFnsWggkmGoC0b5JaqG0fIX3qwDL9PTNkKvG76NGThIWbpXivMrQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1074,9 +1074,7 @@ packages:
         optional: true
     dependencies:
       '@tanstack/query-core': 4.27.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      use-sync-external-store: 1.2.0_react@18.2.0
+      use-sync-external-store: 1.2.0
     dev: false
 
   /@trpc/client/10.18.0_@trpc+server@10.18.0:
@@ -1087,7 +1085,7 @@ packages:
       '@trpc/server': 10.18.0
     dev: false
 
-  /@trpc/next/10.18.0_fk7ybuwqrs7skzzxcj6wjc5c3i:
+  /@trpc/next/10.18.0_45rbrscmrrjg7feeekvlamjx4e:
     resolution: {integrity: sha512-GftAMy3K9AEATmsVTdc5zhCTLzSYpZ9bene7+sTlCF7QX/AMxIsd0ZUFrRnF6yg3jnxN+SvdNcF9IXeETXtGUw==}
     peerDependencies:
       '@tanstack/react-query': ^4.18.0
@@ -1098,17 +1096,14 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@tanstack/react-query': 4.28.0_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': 4.28.0
       '@trpc/client': 10.18.0_@trpc+server@10.18.0
-      '@trpc/react-query': 10.18.0_rcvfzig2xktluz4p7kugxqlbwi
+      '@trpc/react-query': 10.18.0_ixbuxeta5y4viog34zdlpiamk4
       '@trpc/server': 10.18.0
-      next: 13.2.4_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-ssr-prepass: 1.5.0_react@18.2.0
+      react-ssr-prepass: 1.5.0
     dev: false
 
-  /@trpc/react-query/10.18.0_rcvfzig2xktluz4p7kugxqlbwi:
+  /@trpc/react-query/10.18.0_ixbuxeta5y4viog34zdlpiamk4:
     resolution: {integrity: sha512-5IxlvBh+KY/zOYCekBXzZUHtOrURQyXNnpQg9ZlEZTiyZmivGjIyH2VQIsFsGrK8IU99GAmIReQCw6uWgQrEcQ==}
     peerDependencies:
       '@tanstack/react-query': ^4.18.0
@@ -1117,11 +1112,9 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@tanstack/react-query': 4.28.0_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-query': 4.28.0
       '@trpc/client': 10.18.0_@trpc+server@10.18.0
       '@trpc/server': 10.18.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@trpc/server/10.18.0:
@@ -1132,13 +1125,13 @@ packages:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
     dev: false
 
   /@types/connect/3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
     dev: false
 
   /@types/cookies/0.7.7:
@@ -1147,7 +1140,7 @@ packages:
       '@types/connect': 3.4.35
       '@types/express': 4.17.14
       '@types/keygrip': 1.0.2
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
     dev: false
 
   /@types/eslint/8.21.3:
@@ -1164,7 +1157,7 @@ packages:
   /@types/express-serve-static-core/4.17.33:
     resolution: {integrity: sha512-TPBqmR/HRYI3eC2E5hmiivIzv+bidAfXofM+sbonAGvyDhySGw9/PQZFt2BLOrjUUR++4eJVpx6KnLQK1Fk9tA==}
     dependencies:
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
     dev: false
@@ -1193,7 +1186,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
     dev: false
 
   /@types/mime/3.0.1:
@@ -1203,7 +1196,7 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
       form-data: 3.0.1
     dev: false
 
@@ -1215,8 +1208,8 @@ packages:
     resolution: {integrity: sha512-vmYJF0REqDyyU0gviezF/KHq/fYaUbFhkcNbQCuPGFQj6VTbXuHZoxs/Y7mutWe73C8AC6l9fFu8mSYiBAqkGA==}
     dev: false
 
-  /@types/node/18.15.5:
-    resolution: {integrity: sha512-Ark2WDjjZO7GmvsyFFf81MXuGTA/d6oP38anyxWOL6EREyBKAxKoFHwBhaZxCfLRLpO8JgVXwqOwSwa7jRcjew==}
+  /@types/node/18.15.10:
+    resolution: {integrity: sha512-9avDaQJczATcXgfmMAW3MIWArOO7A+m90vuCFLr8AotWf8igO/mRoYukrk2cqZVtv38tHs33retzHEilM7FpeQ==}
 
   /@types/prettier/2.7.2:
     resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
@@ -1251,7 +1244,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
     dev: false
 
   /@types/scheduler/0.16.2:
@@ -1270,7 +1263,7 @@ packages:
     resolution: {integrity: sha512-NUo5XNiAdULrJENtJXZZ3fHtfMolzZwczzBbnAeBbqBwG+LaG6YaJtuwzwGSQZ2wsCrxjEhNNjAkKigy3n8teQ==}
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 18.15.5
+      '@types/node': 18.15.10
     dev: false
 
   /@typescript-eslint/eslint-plugin/5.56.0_2hcjazgfnbtq42tcc73br2vup4:
@@ -2523,7 +2516,7 @@ packages:
       eslint: 8.36.0
       eslint-import-resolver-node: 0.3.7
       eslint-import-resolver-typescript: 3.5.3_eakrjjutlgqjxe5ydhtnd4qdmy
-      eslint-plugin-import: 2.27.5_cnkxirszkzb4o6ts7gbclno24e
+      eslint-plugin-import: 2.27.5_as6wyplljmmarlclp2tx3tj6rq
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.36.0
       eslint-plugin-react: 7.32.2_eslint@8.36.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.36.0
@@ -2571,7 +2564,7 @@ packages:
       debug: 4.3.4
       enhanced-resolve: 5.12.0
       eslint: 8.36.0
-      eslint-plugin-import: 2.27.5_cnkxirszkzb4o6ts7gbclno24e
+      eslint-plugin-import: 2.27.5_as6wyplljmmarlclp2tx3tj6rq
       get-tsconfig: 4.4.0
       globby: 13.1.3
       is-core-module: 2.11.0
@@ -2581,7 +2574,7 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-module-utils/2.7.4_tf7h2azriypc3gaglz256o6pea:
+  /eslint-module-utils/2.7.4_ab4tb467oik4rhsaavmctlutka:
     resolution: {integrity: sha512-j4GT+rqzCoRKHwURX7pddtIPGySnX9Si/cgMI5ztrcqOPtk5dDEeZ34CQVPphnqkJytlc97Vuk05Um2mJ3gEQA==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2606,11 +2599,12 @@ packages:
       debug: 3.2.7
       eslint: 8.36.0
       eslint-import-resolver-node: 0.3.7
+      eslint-import-resolver-typescript: 3.5.3_eakrjjutlgqjxe5ydhtnd4qdmy
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /eslint-plugin-import/2.27.5_cnkxirszkzb4o6ts7gbclno24e:
+  /eslint-plugin-import/2.27.5_as6wyplljmmarlclp2tx3tj6rq:
     resolution: {integrity: sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2628,7 +2622,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.36.0
       eslint-import-resolver-node: 0.3.7
-      eslint-module-utils: 2.7.4_tf7h2azriypc3gaglz256o6pea
+      eslint-module-utils: 2.7.4_ab4tb467oik4rhsaavmctlutka
       has: 1.0.3
       is-core-module: 2.11.0
       is-glob: 4.0.3
@@ -2668,7 +2662,7 @@ packages:
       semver: 6.3.0
     dev: false
 
-  /eslint-plugin-prettier/4.2.1_ose2zoovovx4ulolhifz3tfzx4:
+  /eslint-plugin-prettier/4.2.1_4zq63nz6e4ttpwysb2ij6p5kku:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2681,7 +2675,6 @@ packages:
     dependencies:
       eslint: 8.36.0
       eslint-config-prettier: 8.8.0_eslint@8.36.0
-      prettier: 2.8.6
       prettier-linter-helpers: 1.0.0
     dev: false
 
@@ -4360,12 +4353,10 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
-  /react-ssr-prepass/1.5.0_react@18.2.0:
+  /react-ssr-prepass/1.5.0:
     resolution: {integrity: sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /react/18.2.0:
@@ -5053,12 +5044,10 @@ packages:
       requires-port: 1.0.0
     dev: false
 
-  /use-sync-external-store/1.2.0_react@18.2.0:
+  /use-sync-external-store/1.2.0:
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
     dev: false
 
   /util-deprecate/1.0.2:
