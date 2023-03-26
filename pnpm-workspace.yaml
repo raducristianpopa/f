@@ -3,4 +3,5 @@ packages:
   - packages/db
   - packages/eslint
   - packages/tailwind
+  - packages/trpc
   - packages/tsconfig

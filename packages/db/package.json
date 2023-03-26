@@ -6,7 +6,9 @@
   "scripts": {
     "db:push": "drizzle-kit push:mysql",
     "db:migrate": "drizzle-kit generate:mysql",
-    "clean": "rm -rf .turbo node_modules"
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@planetscale/database": "^1.6.0",

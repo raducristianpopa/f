@@ -40,9 +40,7 @@ const config = {
     ".eslintrc.cjs",
     ".prettierrc.cjs",
     "**/*.config.cjs",
-    "packages/tsconfig/**",
-    "packages/tailwind/**",
-    "packages/eslint/**",
+    "packages/**",
   ],
   reportUnusedDisableDirectives: true,
 };
