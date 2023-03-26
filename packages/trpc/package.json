@@ -13,7 +13,7 @@
     "@trpc/next": "^10.18.0",
     "@trpc/react-query": "^10.18.0",
     "@trpc/server": "^10.18.0",
-    "superjson": "1.9.1",
+    "superjson": "1.12.2",
     "zod": "^3.21.4"
   }
 }
