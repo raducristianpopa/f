@@ -5,7 +5,7 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@bites/"],
+      "matchPackagePatterns": ["^@bites/", "eslint-config-bites"],
       "enabled": false
     }
   ],
