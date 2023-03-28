@@ -1,3 +1,4 @@
+import { InferModel } from "drizzle-orm";
 import type { Kyselify } from "drizzle-orm/kysely";
 import {
   char,
@@ -10,7 +11,6 @@ import {
   timestamp,
   uniqueIndex,
   varchar,
-  type InferModel,
 } from "drizzle-orm/mysql-core";
 
 export const users = mysqlTable(
