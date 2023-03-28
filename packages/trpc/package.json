@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",

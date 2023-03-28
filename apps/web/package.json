@@ -12,10 +12,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@bites/auth": "0.0.0",
     "@bites/db": "0.0.0",
     "@bites/trpc": "0.0.0",
     "@bites/tsconfig": "0.0.0",
-    "@clerk/nextjs": "^4.11.13",
     "micro": "^10.0.1",
     "mysql2": "^2.3.3",
     "nanoid": "^4.0.1",

@@ -1,8 +1,8 @@
 import { type IncomingHttpHeaders } from "http";
 import { type NextApiRequest, type NextApiResponse } from "next";
-import { clerkClient } from "@clerk/nextjs/api";
 import { buffer } from "micro";
 import { Webhook, type WebhookRequiredHeaders } from "svix";
+import { clerkClient } from "@bites/auth";
 import { db } from "@bites/db";
 import { nanoid } from "~/shared/nanoId";
 
