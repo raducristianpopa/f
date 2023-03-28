@@ -1,4 +1,4 @@
-import { SignIn } from "@clerk/nextjs";
+import { SignIn } from "@bites/auth";
 
 // export default function SignInPage() {
 //   return (

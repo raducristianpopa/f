@@ -1,5 +1,6 @@
 packages:
   - apps/web
+  - packages/auth
   - packages/db
   - packages/eslint
   - packages/tailwind
