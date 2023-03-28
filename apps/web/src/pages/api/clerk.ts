@@ -65,6 +65,8 @@ export default async function handler(
         }
 
         const id = nanoid();
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        //@ts-expect-error
         const user = await db
           .insertInto("users")
           .values({
