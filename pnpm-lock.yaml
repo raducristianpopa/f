@@ -101,16 +101,16 @@ importers:
       '@types/node': ^18.15.10
       drizzle-kit: 0.17.0-0cf3fe9
       drizzle-orm: 0.23.4
-      kysely: ^0.23.5
+      kysely: ^0.24.2
       kysely-planetscale: ^1.3.0
       mysql2: ^2.3.3
       typescript: ^5.0.2
     dependencies:
       '@planetscale/database': 1.6.0
       drizzle-kit: 0.17.0-0cf3fe9
-      drizzle-orm: 0.23.4_olhh3hvufyaulhuabakpv4t5vi
-      kysely: 0.23.5
-      kysely-planetscale: 1.3.0_5atypkpng7wf55nwilyueqjtqa
+      drizzle-orm: 0.23.4_jytzchykebqew63mv3zqfdvogu
+      kysely: 0.24.2
+      kysely-planetscale: 1.3.0_dlmubsaxth32pl4jybo6wex7pe
       mysql2: 2.3.3
     devDependencies:
       '@bites/tsconfig': link:../tsconfig
@@ -2047,7 +2047,7 @@ packages:
       - supports-color
     dev: false
 
-  /drizzle-orm/0.23.4_olhh3hvufyaulhuabakpv4t5vi:
+  /drizzle-orm/0.23.4_jytzchykebqew63mv3zqfdvogu:
     resolution: {integrity: sha512-fNTZPKQMWbE0Qy907GgBw/DJazGOBx+jHi1/0iaX8NVq7VvXt8w7ENOzh5LKpe/ld0I3f8M5x+oB8OXM7/d7eQ==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -2104,7 +2104,7 @@ packages:
         optional: true
     dependencies:
       '@planetscale/database': 1.6.0
-      kysely: 0.23.5
+      kysely: 0.24.2
       mysql2: 2.3.3
     dev: false
 
@@ -3535,7 +3535,7 @@ packages:
       json-buffer: 3.0.0
     dev: false
 
-  /kysely-planetscale/1.3.0_5atypkpng7wf55nwilyueqjtqa:
+  /kysely-planetscale/1.3.0_dlmubsaxth32pl4jybo6wex7pe:
     resolution: {integrity: sha512-lAldOF+Yg2raVvRfyXjBqlZ63ONpNZRpfWUK9WrtEdVUIYJxOhbgzihYaRtb4lHVFNyAZyuSCvatEsK7hszcJg==}
     peerDependencies:
       '@planetscale/database': '*'
@@ -3543,11 +3543,11 @@ packages:
     dependencies:
       '@planetscale/database': 1.6.0
       date-fns: 2.29.3
-      kysely: 0.23.5
+      kysely: 0.24.2
     dev: false
 
-  /kysely/0.23.5:
-    resolution: {integrity: sha512-TH+b56pVXQq0tsyooYLeNfV11j6ih7D50dyN8tkM0e7ndiUH28Nziojiog3qRFlmEj9XePYdZUrNJ2079Qjdow==}
+  /kysely/0.24.2:
+    resolution: {integrity: sha512-+7eaTJNUYm2yRq1x+lEOZc+78TO35dTZ9b0dh49+Z9CTt2byMSbMiOKpwPlOyCAaHD4kILkAYWYZNywFlmBwRA==}
     engines: {node: '>=14.0.0'}
     dev: false
 
