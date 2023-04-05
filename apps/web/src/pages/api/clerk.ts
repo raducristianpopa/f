@@ -4,7 +4,7 @@ import { buffer } from "micro";
 import { Webhook, type WebhookRequiredHeaders } from "svix";
 import { clerkClient } from "@bites/auth";
 import { db } from "@bites/db";
-import { nanoid } from "~/shared/nanoId";
+import { cuid } from "~/shared/cuid";
 
 enum WebhookEventType {
   UserCreated = "user.created",
@@ -64,9 +64,7 @@ export default async function handler(
           return res.status(400).json({});
         }
 
-        const id = nanoid();
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        //@ts-expect-error
+        const id = cuid();
         const user = await db
           .insertInto("users")
           .values({
