@@ -26,7 +26,7 @@
     "eslint": "^8.36.0",
     "eslint-config-bites": "0.0.0",
     "prettier": "^2.8.7",
-    "prettier-plugin-tailwindcss": "^0.2.5",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "turbo": "^1.8.5",
     "typescript": "^5.0.2"
   }
