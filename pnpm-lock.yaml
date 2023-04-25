@@ -133,8 +133,8 @@ importers:
         specifier: 0.17.0-0cf3fe9
         version: 0.17.0-0cf3fe9
       drizzle-orm:
-        specifier: 0.23.6
-        version: 0.23.6(@planetscale/database@1.7.0)(kysely@0.24.2)(mysql2@2.3.3)
+        specifier: 0.25.3
+        version: 0.25.3(@planetscale/database@1.7.0)(kysely@0.24.2)(mysql2@2.3.3)
       kysely:
         specifier: ^0.24.2
         version: 0.24.2
@@ -1994,8 +1994,8 @@ packages:
       - supports-color
     dev: false
 
-  /drizzle-orm@0.23.6(@planetscale/database@1.7.0)(kysely@0.24.2)(mysql2@2.3.3):
-    resolution: {integrity: sha512-bVJS5elA/36J//s5K8P8oyB0YDZiTidBQQEUzTtp6As/i4GNvuskByG3e+2NfbmF5KH9e4WpWuavXf0iSLnQPg==}
+  /drizzle-orm@0.25.3(@planetscale/database@1.7.0)(kysely@0.24.2)(mysql2@2.3.3):
+    resolution: {integrity: sha512-0LX4Tjh3+3zm8E9T/h+ayj/3KEzNPItpONHfKnKOzBCjW9C1X0T7uUuRdPE+ssXIVLNuk6rvKCKTL3o9caxnKg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
