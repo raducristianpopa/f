@@ -27,8 +27,8 @@
   "devDependencies": {
     "@bites/tailwind": "0.0.0",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.37.0",
     "eslint-config-bites": "0.0.0",
