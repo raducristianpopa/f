@@ -1,8 +1,0 @@
-{
-  "name": "@bites/tsconfig",
-  "version": "0.0.0",
-  "files": [
-    "./*"
-  ],
-  "private": true
-}
